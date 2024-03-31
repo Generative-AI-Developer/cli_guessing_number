@@ -13,22 +13,18 @@ const answar = await inquirer.prompt([
         type:"number",
         message: "Please guess a Number Between 1-10:  "
     }
-    
 ])
-
-
 console.log(answar)
 if(answar.useGuessedNumber===random_number){
-console.log("Congritulation You Guessed right Number")
-
+console.log("Congritulation!!! You Guessed right Number")
 }
 
 if(answar.useGuessedNumber>random_number){
-    console.log("The  Number is lesser ")
+    console.log("The Guessed Number is lesser")
     Guessing()
 }
 if(answar.useGuessedNumber<random_number){
-    console.log("The Number no is greater")
+    console.log("The Guessed Number no is greater")
     Guessing()
 }
 
