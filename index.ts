@@ -4,6 +4,8 @@ import inquirer from 'inquirer'
 // compare user input with rando no
 
 const random_number = Math.floor(Math.random()*6+1)
+
+async function Guessing() {
 const answar = await inquirer.prompt([
 
     {
@@ -11,13 +13,24 @@ const answar = await inquirer.prompt([
         type:"number",
         message: "Please guess a Number Between 1-6"
     }
+    
 ])
+
 
 console.log(answar)
 if(answar.useGuessedNumber===random_number){
 console.log("Congritulation You Guessed right Number")
+
 }
 
-else {
-    console.log("Your Guessed No is Wrong")
+if(answar.useGuessedNumber>random_number){
+    console.log("The  Number is lesser ")
+    Guessing()
 }
+if(answar.useGuessedNumber<random_number){
+    console.log("The Number no is greater")
+    Guessing()
+}
+
+}
+Guessing()
