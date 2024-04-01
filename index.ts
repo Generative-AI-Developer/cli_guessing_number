@@ -20,7 +20,7 @@ console.log("Congritulation!!! You Guessed right Number")
 }
 
 if(answar.useGuessedNumber>random_number){
-    console.log("The Guessed Number is lesser")
+    console.log("The Guessed Number is smaller")
     Guessing()
 }
 if(answar.useGuessedNumber<random_number){
