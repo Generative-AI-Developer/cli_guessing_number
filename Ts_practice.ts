@@ -23,8 +23,6 @@ for (const fruite of fruites) {
 
     // Map and filter methods
 
-
     const doubleNumber: number[] = numbers.map((curVal)=>curVal)
-
     console.log(doubleNumber)
 
