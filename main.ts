@@ -19,7 +19,7 @@ const answar = await inquirer.prompt([{
     name:"to",
     type:"list",
     message: "Enter To Curruncy",
-    choices:["USD", "ERU", "INR", "PKR"]
+    choices:["USD", "ERU", "INR", "PKR","S-RAYYAL"]
 },
 
 {
